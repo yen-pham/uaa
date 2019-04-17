@@ -23,9 +23,18 @@ public class UserModel {
     @NotEmpty
     @Column(nullable = false)
     private String username;
+
     @NotEmpty
     @Column(nullable = false)
     private String password;
+
+    @NotEmpty
+    @Column(nullable = false)
+    private String name;
+
+    @NotEmpty
+    @Column(nullable = false)
+    private String email;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
