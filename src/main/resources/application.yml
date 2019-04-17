@@ -3,6 +3,7 @@
             password: ''
             url: jdbc:mysql://localhost:3306/uaa?useUnicode=yes&characterEncoding=UTF-8&useSSl=false
             username: root
+
         jpa:
           hibernate:
             ddl-auto: none
@@ -10,5 +11,6 @@
             hibernate:
               dialect: org.hibernate.dialect.MySQL5Dialect
           show-sql: true
-
+        server:
+          port: 8081
 
